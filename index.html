@@ -2,8 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <title>StudyVault</title>
+  <style>
+    /* Base styles to ensure proper rendering */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    html, body {
+      background: #070912;
+      color: #eef0ff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      height: 100%;
+      width: 100%;
+      overflow-x: hidden;
+      position: fixed;
+      overscroll-behavior: none;
+    }
+    
+    #root {
+      height: 100%;
+      width: 100%;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  </style>
 </head>
 <body>
   <div id="root"></div>
